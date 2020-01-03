@@ -95,3 +95,9 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+Some things I had to do to get this to work
+
+1. install tslint
+2. use node version 10.18.1 (sharp does not work with 11)
+3. In the tsconfig.json, had to change "jsx": "preserve" to "jsx":"react". This was necessary to get rid of an error when running the tests that said Test suite failed to run Jest encountered an unexpected token
